@@ -7,9 +7,9 @@
     <script src="jquery/jquery.mask.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('#cpf').mask('(00)0 0000-0000')
+            $('#cpf').mask('000.000.000-00')
             $('#salario').mask('999.999.990,00', {reverse:true})
-            
+            $('#tel').mask('(00)0 000-0000')
             $('#cod').mask('AAA-0000', {translation: {
                 'A' : {pattern: /[A-Z]/}
             } })
@@ -20,6 +20,7 @@
 <body>
     <p>CPF: <input type="text" id="cpf"></p>
     <p>Salario: <input type="text" id="salario"></p>
+    <p>Telefone: <input type="text" id="tel"></p>
     <p>Placa de carro: <input type="text" id="cod"></p>
 </body>
 </html>
